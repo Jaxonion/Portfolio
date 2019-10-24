@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    height: 50px;
+  }
+  
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    border: 1px solid black;
+  }
+  .right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+  }
+  
+  .personal-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: lightgray;
+  }
+  
+  .one, .two, .three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    background-color: rgb(170, 170, 170);
+    border: 1px solid black;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(170, 170, 170);
+    border: 1px solid black;
+  }
+  
