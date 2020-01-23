@@ -5,21 +5,54 @@
     <meta name="viewport" content="width=device-width">
     <title>Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text|Prata&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav>Nav</nav>
-    <section class='personal-info'>
-      <div class='left-box'>
-        <h1>Picture/Name</h1>
+    <img class='background_pic' src="portfolio_pictures\16904946_730500563771681_5610311569809551055_o.jpg" alt="background_pic">
+    <section class='personal_info'>
+      <div class='left_box'>
+        <img id='face_picture' height='250px' width='250px' alt='face picture' src='portfolio_pictures\Face.jpg' />
+        <h1>JAXON POTTER</h1>
       </div>
-      <div class='right-box'>
-        <h1>Personal Info</h1>
+      <div class='right_box'>
+        
+        <h3>
+          <ul>
+            <li>
+              Hey, I'm Jaxon. I'm a full-stack developer!
+            </li>
+            <li>
+              I love art, drawing and making designing things.
+            </li>
+            <li>
+              You can often find me skateboarding or snowboarding in my free time.
+            </li>
+            <li>
+              I like languages and know 4 languages: English, Tagalog, Ilocano, Kapampangan and some Spanish, Sambal, Cebuano and Waray-Waray.
+            </li>
+          </ul>
+        </h3>
+        
       </div>
     </section>
-    <div class='one'>Portfolio Item #1</div>
-    <div class='two'>Portfolio Item #2</div>
-    <div class='three'>Portfolio Item #3</div>
-    <div class='footer'>Footer</div>
+    <section class='my_work'>
+      <h1 class='my_work_title'>My Work</h1>
+      <div class='one works'>
+        <a target='_blank' href="https://jaxonion.github.io/Quiz-App/">
+        <h2 class='first_item_title'>Skateboard Quiz</h2>
+        <img class='work_pic' height='400px' width="100%" src='Quiz_App_Pictures\Question Options Quiz App.PNG' />
+        <h4 class='first_item_description'>Skateboard Quiz. Goes through a 10 questions scoring you on your knowledge about skateboarding</h4>
+        </a>
+      </div>
+      <div class='two works'>
+        <a target="_blank" href="https://jaxonion.github.io/API-App/" >
+          <h2 class='second_item_title'>API App</h2>
+          <img class='work_pic' height='400px' width='100%' src='Quiz_App_Pictures\skate_help_picture.PNG' />
+        <h4 class='second_item_description'>API App that uses a weather API to find the weather as well as Youtube's API to find videos on how to learn a trick of your choice.</h4>
+        </a>
+      </div>
+      <div class='footer'><h2>Created by Jaxon Potter</h2></div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
