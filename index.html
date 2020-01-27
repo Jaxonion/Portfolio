@@ -9,7 +9,15 @@
   </head>
   <body>
     <img class='background_pic' src="portfolio_pictures/16904946_730500563771681_5610311569809551055_o.jpg" alt="background_pic">
-    <section class='personal_info'>
+    <nav class='navigation_bar'>
+      <button onclick="myFunction()" class='dropdown_button' >Menu</button>
+      <div id='myDropdown' class='dropdown_content'>
+        <button onclick="link_one()" class='link portfolio_link1'>Link 1</button>
+        <button onclick="link_two()" class='link portfolio_link2'>Link 2</button>
+        <button onclick="link_three()" class='link portfolio_link3'>Link 3</button>
+      </div>
+    </nav>
+    <section id='personal_info' class='personal_info'>
       <div class='left_box'>
         <img id='face_picture' alt='face picture' src='portfolio_pictures/Face.jpg' />
         <h1>JAXON POTTER</h1>
@@ -36,7 +44,7 @@
       </div>
     </section>
     <section class='my_work'>
-      <div class='contact_info'>
+      <div id='contact_info' class='contact_info'>
         <h2>Contact Me!</h2>
         <div class='contact_links'>
           <a class='contact' href="mailto:jaxonpotter@gmail.com" target="_top">Email Me!</a>
@@ -45,7 +53,8 @@
         </div>
       </div>
       <h1 class='my_work_title'>My Work</h1>
-      <div class='one works'>
+
+      <div id='first_item' class='one works'>
         <h2 class='first_item_title'>Skateboard Quiz</h2>
         <a target='_blank' href="https://jaxonion.github.io/Quiz-App/">
           <img class='work_pic' alt='work_1' src='Quiz_App_Pictures/Question_Options_Quiz_App.PNG' />
@@ -57,6 +66,7 @@
         </div>
         
       </div>
+
       <div class='two works'>
         <h2 class='second_item_title'>API App</h2>
         <a target="_blank" href="https://jaxonion.github.io/API-App/">
@@ -68,7 +78,12 @@
           <a class='github_link'>GitHub Repo</a>
         </div>
       </div>
+
     </section>
     <script src="script.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   </body>
 </html>
