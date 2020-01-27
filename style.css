@@ -175,3 +175,13 @@
     flex-direction: column;
     align-items: space-around;
   }
+
+  #face_picture {
+    height: 250px;
+    width: 250px;
+  }
+
+  .work_pic {
+    height: 400px;
+    width: 100%;
+  }
