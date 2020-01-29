@@ -1,5 +1,5 @@
 function myFunction() {
-    $('.dropdown_content').addClass('show');
+    $('.dropdown_content').toggleClass('show');
 }
 
 function link_one() {

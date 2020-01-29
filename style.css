@@ -214,8 +214,9 @@
   .dropdown_content {
     display: none;
     position: absolute;
+    margin-top: 70px;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -246,7 +247,7 @@
 
   @media screen and (max-width: 350) {
     .works {
-      height: 800px;
+      min-height: 800px;
     }
     .work_pic {
       height: 150px;
