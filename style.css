@@ -188,7 +188,7 @@
   }
 
   .work_pic {
-    height: 400px;
+    height: auto;
     width: 100%;
   }
 
@@ -243,22 +243,14 @@
 
   @media screen and (min-width: 500px){
     .works {
-      height: 600px;
-    }
-    .work_pic {
-      height: 300px;
+      min-height: 400px;
     }
   }
 
   @media screen and (max-width: 420px) {
-    .works {
-      min-height: 500px;
-    }
-    .work_pic {
-      height: 300px;
-    }
+    
     .personal_info {
-      min-height: 800px;
+      min-height: 850px;
     }
   }
 
