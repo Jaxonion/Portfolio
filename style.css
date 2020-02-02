@@ -35,22 +35,23 @@
   }
   
   .personal_info {
+    padding: 10px 0px;
     display: flex;
     border-top: 4px solid black;
     border-bottom: 2px solid black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 675px;
+    /*min-height: 675px;*/
     background-color: lightgray;
   }
   
-  .one, .two, .three {
+  .works {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 625px;
+    min-height: 400px;
     max-width: 800px;
     background-color: rgb(170, 170, 170);
     border: 2px solid black;
@@ -103,14 +104,19 @@
   }
 
   ul {
-    height: 400px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
+  
+  li {
+    margin-bottom: 20px;
+  }
 
   ul li {
     list-style-type: none;
+    text-align: left;
   }
 
   h1 {
@@ -141,7 +147,8 @@
   @media screen and (min-width: 700px) {
     .personal_info {
       flex-direction: row;
-      height: 500px;
+      /*height: 500px;*/
+      padding-right: 50px;
     }
   }
 
@@ -160,6 +167,10 @@
   }
   p, a {
     margin: auto auto;
+  }
+
+  p {
+    text-align: left;
   }
 
   a {
@@ -247,10 +258,10 @@
     }
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (min-width: 420px) {
     
     .personal_info {
-      min-height: 850px;
+      /*min-height: 850px;*/
     }
   }
 
@@ -267,5 +278,6 @@
     text-decoration: none;
     border: 2px solid black;
     color: black;
-    background-color: rgb(88, 100, 153);
+    background-color: rgb(49, 125, 212);
+    max-height: 50px;
   }
