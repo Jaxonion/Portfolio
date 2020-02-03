@@ -53,20 +53,22 @@
     justify-content: center;
     align-items: center;
     min-height: 400px;
-    max-width: 800px;
+    max-width: 80%;
     background-color: rgb(170, 170, 170);
     border: 2px solid black;
     padding: 20px;
+    margin-bottom: 30px;
   }
   
   .contact_info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 20px;
     height: 200px;
     width: 100%;
-    background-color: lightgray;
+    background-color: rgb(170, 170, 170);
     border: 1px solid black;
   }
 
@@ -118,6 +120,7 @@
 
   li {
     margin-bottom: 10px;
+    line-height: 30px;
   }
 
   h1 {
@@ -126,6 +129,7 @@
 
   .work_pic {
     padding-bottom: 10px;
+    max-width: 800px;
   }
 
   .my_work {
@@ -133,28 +137,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(53, 143, 196);
-    padding: 10px;
+    background-color: lightgray;
+    padding: 0px;
     margin-top: 5px;
     border-top: 2px solid black;
   }
 
   .my_work_title {
     margin: 10px;
-  }
-
-  
-
-  @media screen and (min-width: 700px) {
-    .personal_info {
-      flex-direction: row;
-      /*height: 500px;*/
-      padding-right: 50px;
-    }
-  }
-
-  .works {
-    margin-bottom: 30px;
   }
   
   .made_with {
@@ -163,9 +153,22 @@
 
   .description {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
+  .rep_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 420px) {
+    .rep_links{
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   p, a {
     margin: auto auto;
   }
@@ -189,9 +192,11 @@
 
   .contact_links {
     height: 100%;
+    width: 100%;
+    max-width: 500px;
     display: flex;
-    flex-direction: column;
-    align-items: space-around;
+    flex-direction: row;
+    align-items: space-between;
   }
 
   #face_picture {
@@ -212,12 +217,6 @@
     padding-left: 10px;
   }
 
-  @media screen and (min-width: 500px){
-    .works {
-      min-height: 400px;
-    }
-  }
-
   @media screen and (min-width: 420px) {
     
     .personal_info {
@@ -226,9 +225,29 @@
   }
 
   .link {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    border-radius: 5px;
+    width: 30%;
     min-width: 100px;
     min-height: 30px;
     max-height: 40px;
+  }
+
+  @media screen and (min-width: 500px){
+    .works {
+      min-height: 400px;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .personal_info {
+      flex-direction: row;
+      /*height: 500px;*/
+      padding-right: 50px;
+    }
   }
   
   .link:hover {
@@ -238,11 +257,27 @@
   .app_link {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 5px;
     margin: 5px 5px;
+    width: 130px;
     text-decoration: none;
-    border: 2px solid black;
+    border-radius: 5px;
     color: black;
     background-color: rgb(49, 125, 212);
     max-height: 50px;
   }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: gray;
+    border-top: 2px solid black;
+  }
+  /*.icon {
+    width: 50px;
+    height: 50px;
+  }*/
