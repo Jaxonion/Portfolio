@@ -129,7 +129,6 @@
 
   .work_pic {
     padding-bottom: 10px;
-    max-width: 800px;
   }
 
   .my_work {
@@ -166,6 +165,10 @@
     .rep_links{
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+    }
+    .rep_links a {
+      width: 100%;
     }
   }
 
@@ -180,6 +183,7 @@
   a {
     color: blue;
     text-decoration: underline;
+    width: 100%;
   }
 
   .hidden {
